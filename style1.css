@@ -1,0 +1,134 @@
+/* style1.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #191970;
+    color: white;
+	overflow-x: hidden;
+}
+
+header {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 32px;
+    color: white;
+}
+
+.horizontal-nav {
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+    padding: 10px;
+}
+
+.horizontal-nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.horizontal-nav a:hover {
+    color: #ccc;
+}
+
+main {
+    padding: 20px;
+	line-height: 2;
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 24px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.products-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.product {
+    width: calc(33.33% - 20px);
+    padding: 10px;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+button {
+    margin: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+button[type="button"] {
+    background-color: #4caf50;
+    color: white;
+}
+
+button[type="reset"] {
+    background-color: #f44336;
+    color: white;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.button-container {
+	margin-top: 20px;
+}
+
+#order-summary {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#order-items {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+#order-total {
+    font-weight: bold;
+}
+
+img {
+    border: 3px solid #ccc;
+    border-radius: 5px;
+    object-fit: cover;
+}

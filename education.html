@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education - Planetary Society of America</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #191970;
+            color: white;
+			overflow-x: hidden;
+        }
+		
+        header {
+            background-color: #333;
+            padding: 20px;
+            text-align: center;
+        }
+		
+        header h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 32px;
+            color: white;
+        }
+		
+        .horizontal-nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 10px;
+        }
+		
+        .horizontal-nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+		
+        .horizontal-nav a:hover {
+            color: #ccc;
+        }
+		
+		main {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			margin-top: 20px;
+			width: 100%;
+		}
+		
+		.text-section {
+			width: 100%;
+			text-align: center;
+			margin-bottom: 20px;
+		}
+		
+		.text-section .content {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		
+		.text-section p {
+			max-width: 600px;
+			margin: 0 auto;
+		}
+		
+		.telescope {
+			max-width: 450px;
+			padding: 60px;
+		}
+
+        .telescope, .astronomer {
+            display: inline-block;
+            text-align: center;
+            margin: 20px;
+        }
+		
+		.astronomer {
+			width: 250px;
+			text-align: center;
+			padding: 50px;
+			margin: 10px;
+		}
+
+        img {
+            width: 200px;
+            height: 300px;
+            border: 3px solid #ccc;
+            border-radius: 5px;
+            object-fit: cover;
+        }
+		
+        h2, h3 {
+            margin-bottom: 10px;
+        }
+		
+		p {
+			line-height: 2;
+		}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Education - Planetary Society of America</h1>
+    </header>
+    <nav class="horizontal-nav">
+        <a href="index.html">Home</a>
+        <a href="registration.html">Registration</a>
+        <a href="contact.html">Contact</a>
+        <a href="alert.html">Alert</a>
+        <a href="shopping.html">Shopping</a>
+    </nav>
+    <main>
+		<div class="text-section">
+        <h2>Astronomy Basics</h2>
+		<div class="content">
+			<p>Here, we provide basic information about astronomy for both adults and children, including images and descriptions of famous telescopes (radio and optical) as well as brief biographies of famous historical astronomers.</p>
+        </div>
+		</div>
+		<div class="text-section">
+        <h2>Famous Telescopes</h2>
+		<div class="content">
+			<div class="telescope">
+				<img src="radio_telescope.jpg" alt="Reber Radio Telescope">
+				<h3>Reber Radio Telescope</h3>
+				<p>The telescope was built by astronomer Grote Reber in his back yard in Wheaton, Illinois in 1937, following up on the research of Karl Jansky,
+				the discoverer (in 1933) of radio waves emanating from the Milky Way. 
+				It was the second radio telescope ever built (after Jansky's dipole array), and the first parabolic radio telescope,
+				serving as a prototype for the first large dish radio telescopes such as the Green Bank Telescope and Lovell Telescope constructed after World War II.</p>
+			</div>
+			<div class="telescope">
+				<img src="hubble_telescope.jpg" alt="Hubble Space Telescope">
+				<h3>Hubble Space Telescope</h3>
+				<p>Named in honor of the trailblazing astronomer Edwin Hubble, the Hubble Space Telescope is a large,
+				space-based observatory, which has revolutionized astronomy since its launch and deployment by the space shuttle Discovery in 1990.
+				Hubble has made more than 1.5 million observations over the course of its lifetime. 
+				Over 19,000 peer-reviewed science papers have been published on its discoveries, and every current astronomy textbook includes contributions from the observatory.</p>
+			</div>
+		</div>
+		</div>
+        <!-- Add more telescope images and descriptions as needed -->
+		<div class="text-section">
+        <h2>Famous Historical Astronomers</h2>
+		<div class="content">
+        <div class="astronomer">
+            <img src="Ptolemy.jpg" alt="Claudius Ptolemy">
+            <h3>Claudius Ptolemy</h3>
+            <p>Ptolemy synthesized Greek knowledge of the known Universe.
+			His work enabled astronomers to make accurate predictions of planetary positions and solar and lunar eclipses,
+			promoting acceptance of his view of the cosmos in the Byzantine and Islamic worlds and throughout Europe for more than 1400 years.
+			Ptolemy accepted Aristotle’s idea that the Sun and the planets revolve around a spherical Earth, a geocentric view.
+			Ptolemy developed this idea through observation and in mathematical detail.</p>
+        </div>
+        <div class="astronomer">
+            <img src="Copernicus.jpg" alt="Nicolaus Copernicus">
+			<h3>Nicolaus Copernicus</h3>
+            <p>Nicolaus Copernicus (1473–1543) was a mathematician and astronomer who proposed that the sun was stationary in the center of the universe and the earth revolved around it.
+			Disturbed by the failure of Ptolemy’s geocentric model of the universe, Copernicus decided that he could achieve his goal only through a heliocentric model.
+			He thereby created a concept of a universe in which the distances of the planets from the sun bore a direct relationship to the size of their orbits.
+			At the time Copernicus’s heliocentric idea was very controversial; nevertheless, it was the start of a change in the way the world was viewed, and Copernicus came to be seen as the initiator of the Scientific Revolution.</p>
+        </div>
+        <div class="astronomer">
+            <img src="Galilei.jpg" alt="Galileo Galilei">
+            <h3>Galileo Galilei</h3>
+            <p>From the seventeenth century onward, Galileo has been seen by many as the “hero” of modern science.
+			He is renowned for his discoveries: he was the first to report telescopic observations of the mountains on the moon, the moons of Jupiter, the phases of Venus, and the rings of Saturn.
+			He invented an early microscope and a predecessor to the thermometer.
+			In mathematical physics—a discipline he helped create—he calculated the law of free fall, conceived of an inertial principle, determined the parabolic trajectory of projectiles, and advocated the relativity of motion.</p>
+        </div>
+        <div class="astronomer">
+            <img src="Kepler.jpg" alt="Johannes Kepler">
+            <h3>Johannes Kepler</h3>
+            <p>Kepler used simple mathematics to formulate three laws of planetary motion.
+			Kepler's First Law stated that planets move in elliptical paths around the Sun.
+			He also discovered that planets move proportionally faster in their orbits when they are closer to the Sun; this became Kepler's Second Law.
+			Finally, Kepler's Third Law explained the relationship between the distance of a planet from the Sun and the amount of time it took to orbit the Sun.
+			Together these laws of celestial mechanics revolutionized astronomy.</p>
+        </div>
+		</div>
+		</div>
+    </main>
+	<script src="script.js"></script>
+</body>
+</html>

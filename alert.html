@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alerts - Planetary Society of America</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #191970;
+            color: white;
+			overflow-x: hidden;
+        }
+
+        header {
+            background-color: #333;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 32px;
+            color: white;
+        }
+
+        .horizontal-nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 10px;
+        }
+
+        .horizontal-nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .horizontal-nav a:hover {
+            color: #ccc;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0px;
+            display: inline-block;
+            text-align: left;
+			line-height: 2;
+        }
+
+        li {
+            margin-bottom: 15px;
+        }
+
+        .external-links {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .external-links a {
+            text-decoration: none;
+            color: white;
+            border: 2px solid white;
+            border-radius: 5px;
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .external-links a:hover {
+            background-color: white;
+            color: #191970;
+        }
+		
+		img {
+            border: 3px solid #ccc;
+            border-radius: 5px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+	<script src="script.js"></script>
+    <header>
+        <h1>Alerts - Planetary Society of America</h1>
+    </header>
+    <nav class="horizontal-nav">
+        <a href="index.html">Home</a>
+        <a href="registration.html">Registration</a>
+        <a href="contact.html">Contact</a>
+        <a href="education.html">Education</a>
+        <a href="shopping.html">Shopping</a>
+    </nav>
+    <main>
+        <h2>Latest Alerts</h2>
+        <ul>
+            <li>
+                <strong>Comet Alert:</strong> Comet XYZ will have a close approach to Earth on <span class="currentDate"></span>.
+            </li>
+            <li>
+                <strong>Asteroid Alert:</strong> Asteroid ABC will pass near Earth on <span class="currentDate"></span>.
+            </li>
+            <li>
+                <strong>Earth Magnetic Pole Shift Alert:</strong> Recent data indicates a possible magnetic pole shift on <span class="currentDate"></span>.
+            </li>
+            <li>
+                <strong>Solar Wind Alert:</strong> A significant solar wind event is expected on <span class="currentDate"></span>.
+            </li>
+           <!-- Add more alerts as needed -->
+        </ul>
+        <div class="external-links">
+            <a href="https://www.nasa.gov/" target="_blank">NASA</a>
+            <a href="https://www.noaa.gov/" target="_blank">NOAA</a>
+        </div>
+    </main>
+    <script>
+        function displayCurrentDate() {
+            const currentDateElements = document.querySelectorAll(".currentDate");
+            const now = new Date();
+            const dateString = now.toDateString();
+            
+            currentDateElements.forEach(element => {
+                element.innerText = dateString;
+            });
+        }
+
+        displayCurrentDate();
+    </script>
+</body>
+</html>
+

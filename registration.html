@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planetary Society - Seminar Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000080; /* midnight blue */
+            color: white;
+			overflow-x: hidden;
+        }
+
+        header {
+            background-color: #333;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 32px;
+            color: white;
+        }
+		
+		.nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 10px;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .nav a:hover {
+            color: #ccc;
+        }
+
+        main {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+			line-height: 2;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        form input[type="number"] {
+            width: 100%;
+            padding: 6px 12px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            background-color: white;
+            color: black;
+        }
+
+        form button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        #total-cost {
+            margin-top: 20px;
+        }
+		
+		img {
+            border: 3px solid #ccc;
+            border-radius: 5px;
+            object-fit: cover;
+        }
+    </style>
+    <script>
+        function calculateTotalCost() {
+            const daySeminarCount = parseInt(document.getElementById("day-seminar-count").value);
+            const nightSleepoverCount = parseInt(document.getElementById("night-sleepover-count").value);
+            const totalCost = daySeminarCount * 100 + nightSleepoverCount * 125;
+            document.getElementById("total-cost").innerText = "Total Cost: $" + totalCost;
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Planetary Society - Seminar Registration</h1>
+    </header>
+	<nav class="nav">
+		<a href="index.html">Home</a>
+		<a href="contact.html">Contact</a>
+		<a href="education.html">Education</a>
+		<a href="alert.html">Alert</a>
+		<a href="shopping.html">Shopping</a>
+	</nav>
+    <main>
+        <h2>Largest Object(s) in the Universe Seminar</h2>
+        <p>Day Seminar: $100</p>
+        <p>Night Sleep-Over (bring your own sleeping bag) with breakfast: $125</p>
+        <p>All net proceeds will go to the Planetary Society's research program.</p>
+        <form>
+            <label for="day-seminar-count">Number of people attending the day seminar:</label>
+            <input type="number" id="day-seminar-count" name="day-seminar-count" value="0" min="0">
+            <label for="night-sleepover-count">Number of people attending the night sleep-over:</label>
+            <input type="number" id="night-sleepover-count" name="night-sleepover-count" value="0" min="0">
+            <button type="button" onclick="calculateTotalCost()">Calculate Total Cost</button>
+            <p id="total-cost">Total Cost: $0</p>
+        </form>
+    </main>
+	<script src="script.js"></script>
+</body>
+</html>
